@@ -246,39 +246,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
     Title.TextColor3 = Color3.fromRGB(r, g, b)
 end)
 
-print("✅ Croks Hub Clean Edition (Bola Redonda) carregado!")_0xDBC1.Color = _0x350E
-_0xDBC1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-_0xDBC1.Parent = _0x8FB7local _0xDF43 = Instance.new(string.char(70,114,97,109,101))
-_0xDF43.Size = UDim2.new(1, 0, 0, 50)
-_0xDF43.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
-_0xDF43.BorderSizePixel = 0
-_0xDF43.Parent = _0x8FB7
-local _0x23E1 = Instance.new(string.char(85,73,67,111,114,110,101,114))
-_0x23E1.CornerRadius = UDim.new(0, 10)
-_0x23E1.Parent = _0xDF43
-local _0x0D1C = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
-_0x0D1C.Size = UDim2.new(1, -50, 0, 25)
-_0x0D1C.Position = UDim2.new(0, 10, 0, 5)
-_0x0D1C.Text =string.char(67,82,79,75,83,32,72,85,66)_0x0D1C.TextColor3 = _0x9E02
-_0x0D1C.TextSize = 15
-_0x0D1C.Font = Enum.Font.GothamBold
-_0x0D1C.BackgroundTransparency = 1
-_0x0D1C.Parent = _0xDF43
-local _0xCD69 = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
-_0xCD69.Size = UDim2.new(1, -50, 0, 12)
-_0xCD69.Position = UDim2.new(0, 10, 0, 28)
-_0xCD69.Text =string.char(66,69,83,84,32,83,67,82,73,80,84,83,32,226,128,162,32,118,49,46,48)_0xCD69.TextColor3 = _0xBE12
-_0xCD69.TextSize = 9
-_0xCD69.Font = Enum.Font.Gotham
-_0xCD69.BackgroundTransparency = 1
-_0xCD69.Parent = _0xDF43
-local _0x7C5E = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
-_0x7C5E.Size = UDim2.new(0, 25, 0, 25)
-_0x7C5E.Position = UDim2.new(1, -30, 0, 12)
-_0x7C5E.Text =string.char(226,156,149)_0x7C5E.TextColor3 = Color3.fromRGB(255, 80, 80)
-_0x7C5E.TextSize = 14
-_0x7C5E.Font = Enum.Font.GothamBold
-_0x7C5E.BackgroundTransparency = 1
+print("✅ Croks Hub Clean Edition (Bola Redonda) carregado!")parency = 1
 _0x7C5E.Parent = _0xDF43local _0x3800 = Instance.new(string.char(83,99,114,111,108,108,105,110,103,70,114,97,109,101))
 _0x3800.Size = UDim2.new(1, -10, 1, -55)
 _0x3800.Position = UDim2.new(0, 5, 0, 55)
