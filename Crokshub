@@ -1,89 +1,252 @@
-print(string.char(239,191,189,239,191,189,32,67,97,114,114,101,103,97,110,100,111,32,67,114,111,107,115,32,72,117,98,32,67,108,101,97,110,32,69,100,105,116,105,111,110,46,46,46))
-local _0x410D = Instance.new(string.char(83,99,114,101,101,110,71,117,105))
-_0x410D.Name =string.char(67,114,111,107,115,72,117,98,67,108,101,97,110)_0x410D.ResetOnSpawn = false
-_0x410D.IgnoreGuiInset = true
-_0x410D.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-_0x410D.Parent = game:GetService(string.char(67,111,114,101,71,117,105))local _0x4667 = Color3.fromRGB(10, 10, 12)
-local _0xC006 = Color3.fromRGB(18, 18, 20)
-local _0x6326 = Color3.fromRGB(0, 255, 120)
-local _0x4983 = Color3.fromRGB(255, 255, 255)
-local _0x6194 = Color3.fromRGB(150, 150, 150)local _0xE738 = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
-_0xE738.Size = UDim2.new(0, 50, 0, 50)
-_0xE738.Position = UDim2.new(0, 10, 0, 100)
-_0xE738.BackgroundColor3 = _0x4667
-_0xE738.BorderSizePixel = 0
-_0xE738.Text =string.char(67,72)_0xE738.TextColor3 = _0x4983
-_0xE738.TextSize = 14
-_0xE738.Font = Enum.Font.GothamBold
-_0xE738.Parent = _0x410D
-local _0x5F23 = Instance.new(string.char(85,73,67,111,114,110,101,114))
-_0x5F23.CornerRadius = UDim.new(1, 0)
-_0x5F23.Parent = _0xE738
-local _0x2BE4 = Instance.new(string.char(85,73,83,116,114,111,107,101))
-_0x2BE4.Thickness = 2
-_0x2BE4.Color = _0x6326
-_0x2BE4.Parent = _0xE738local _0xF0FC = Instance.new(string.char(70,114,97,109,101))
-_0xF0FC.Size = UDim2.new(0, 220, 0, 330)
-_0xF0FC.Position = UDim2.new(0.5, -110, 0.5, -165)
-_0xF0FC.BackgroundColor3 = _0x4667
-_0xF0FC.BorderSizePixel = 0
-_0xF0FC.Visible = false
-_0xF0FC.Parent = _0x410D
-local _0x907E = Instance.new(string.char(85,73,67,111,114,110,101,114))
-_0x907E.CornerRadius = UDim.new(0, 10)
-_0x907E.Parent = _0xF0FC
-local _0x93C8 = Instance.new(string.char(85,73,83,116,114,111,107,101))
-_0x93C8.Thickness = 1.5
-_0x93C8.Color = _0x6326
-_0x93C8.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-_0x93C8.Parent = _0xF0FClocal _0x029D = Instance.new(string.char(70,114,97,109,101))
-_0x029D.Size = UDim2.new(1, 0, 0, 50)
-_0x029D.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
-_0x029D.BorderSizePixel = 0
-_0x029D.Parent = _0xF0FC
-local _0xCA90 = Instance.new(string.char(85,73,67,111,114,110,101,114))
-_0xCA90.CornerRadius = UDim.new(0, 10)
-_0xCA90.Parent = _0x029D
-local _0xBA7E = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
-_0xBA7E.Size = UDim2.new(1, -50, 0, 25)
-_0xBA7E.Position = UDim2.new(0, 10, 0, 5)
-_0xBA7E.Text =string.char(67,82,79,75,83,32,72,85,66)_0xBA7E.TextColor3 = _0x4983
-_0xBA7E.TextSize = 15
-_0xBA7E.Font = Enum.Font.GothamBold
-_0xBA7E.BackgroundTransparency = 1
-_0xBA7E.Parent = _0x029D
-local _0x02BC = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
-_0x02BC.Size = UDim2.new(1, -50, 0, 12)
-_0x02BC.Position = UDim2.new(0, 10, 0, 28)
-_0x02BC.Text =string.char(66,69,83,84,32,83,67,82,73,80,84,83,32,226,128,162,32,118,49,46,48)_0x02BC.TextColor3 = _0x6194
-_0x02BC.TextSize = 9
-_0x02BC.Font = Enum.Font.Gotham
-_0x02BC.BackgroundTransparency = 1
-_0x02BC.Parent = _0x029D
-local _0xC8A9 = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
-_0xC8A9.Size = UDim2.new(0, 25, 0, 25)
-_0xC8A9.Position = UDim2.new(1, -30, 0, 12)
-_0xC8A9.Text =string.char(226,156,149)_0xC8A9.TextColor3 = Color3.fromRGB(255, 80, 80)
-_0xC8A9.TextSize = 14
-_0xC8A9.Font = Enum.Font.GothamBold
-_0xC8A9.BackgroundTransparency = 1
-_0xC8A9.Parent = _0x029Dlocal _0xB564 = Instance.new(string.char(83,99,114,111,108,108,105,110,103,70,114,97,109,101))
-_0xB564.Size = UDim2.new(1, -10, 1, -55)
-_0xB564.Position = UDim2.new(0, 5, 0, 55)
-_0xB564.BackgroundColor3 = Color3.fromRGB(15, 15, 18)
-_0xB564.BorderSizePixel = 0
-_0xB564.ScrollBarThickness = 3
-_0xB564.ScrollBarImageColor3 = _0x6326
-_0xB564.AutomaticCanvasSize = Enum.AutomaticSize.Y
-_0xB564.CanvasSize = UDim2.new(0, 0, 0, 0)
-_0xB564.Parent = _0xF0FC
-local _0x1A5D = Instance.new(string.char(85,73,67,111,114,110,101,114))
-_0x1A5D.CornerRadius = UDim.new(0, 8)
-_0x1A5D.Parent = _0xB564local _0xD55C = 10
-local function _0xD5FE(icon, nome, categoria, url)
-local _0xDEF6 = Instance.new(string.char(70,114,97,109,101))
-_0xDEF6.Size = UDim2.new(1, -10, 0, 50)
-_0xDEF6.Position = UDim2.new(0, 5, 0, _0xD55C)
+-- ==========================================
+-- 💎 CROKS HUB - CLEAN EDITION (BOLA REDONDA)
+-- ==========================================
+print("💎 Carregando Croks Hub Clean Edition...")
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "CroksHubClean"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game:GetService("CoreGui")
+
+-- ==========================================
+-- PALETA DE CORES (Dark + Verde Neon)
+-- ==========================================
+local CorFundo = Color3.fromRGB(10, 10, 12)
+local CorPainel = Color3.fromRGB(18, 18, 20)
+local CorBorda = Color3.fromRGB(0, 255, 120)
+local CorTexto = Color3.fromRGB(255, 255, 255)
+local CorCinza = Color3.fromRGB(150, 150, 150)
+
+-- ==========================================
+-- 1. BOLA FLUTUANTE "CH" (100% Redonda)
+-- ==========================================
+local MenuButton = Instance.new("TextButton")
+MenuButton.Size = UDim2.new(0, 50, 0, 50)
+MenuButton.Position = UDim2.new(0, 10, 0, 100)
+MenuButton.BackgroundColor3 = CorFundo
+MenuButton.BorderSizePixel = 0
+MenuButton.Text = "CH"
+MenuButton.TextColor3 = CorTexto
+MenuButton.TextSize = 14
+MenuButton.Font = Enum.Font.GothamBold
+MenuButton.Parent = ScreenGui
+
+local MenuCorner = Instance.new("UICorner")
+MenuCorner.CornerRadius = UDim.new(1, 0)
+MenuCorner.Parent = MenuButton
+
+local MenuStroke = Instance.new("UIStroke")
+MenuStroke.Thickness = 2
+MenuStroke.Color = CorBorda
+MenuStroke.Parent = MenuButton
+
+-- ==========================================
+-- 2. MENU PRINCIPAL (Vertical Compacto)
+-- ==========================================
+local MainFrame = Instance.new("Frame")
+MainFrame.Size = UDim2.new(0, 220, 0, 330)
+MainFrame.Position = UDim2.new(0.5, -110, 0.5, -165)
+MainFrame.BackgroundColor3 = CorFundo
+MainFrame.BorderSizePixel = 0
+MainFrame.Visible = false
+MainFrame.Parent = ScreenGui
+
+local UICornerMain = Instance.new("UICorner")
+UICornerMain.CornerRadius = UDim.new(0, 10)
+UICornerMain.Parent = MainFrame
+
+local UIStroke = Instance.new("UIStroke")
+UIStroke.Thickness = 1.5
+UIStroke.Color = CorBorda
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke.Parent = MainFrame
+
+-- ==========================================
+-- 3. HEADER (Título Compacto)
+-- ==========================================
+local Header = Instance.new("Frame")
+Header.Size = UDim2.new(1, 0, 0, 50)
+Header.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+Header.BorderSizePixel = 0
+Header.Parent = MainFrame
+
+local HeaderCorner = Instance.new("UICorner")
+HeaderCorner.CornerRadius = UDim.new(0, 10)
+HeaderCorner.Parent = Header
+
+local Title = Instance.new("TextLabel")
+Title.Size = UDim2.new(1, -50, 0, 25)
+Title.Position = UDim2.new(0, 10, 0, 5)
+Title.Text = "CROKS HUB"
+Title.TextColor3 = CorTexto
+Title.TextSize = 15
+Title.Font = Enum.Font.GothamBold
+Title.BackgroundTransparency = 1
+Title.Parent = Header
+
+local Version = Instance.new("TextLabel")
+Version.Size = UDim2.new(1, -50, 0, 12)
+Version.Position = UDim2.new(0, 10, 0, 28)
+Version.Text = "BEST SCRIPTS • v1.0"
+Version.TextColor3 = CorCinza
+Version.TextSize = 9
+Version.Font = Enum.Font.Gotham
+Version.BackgroundTransparency = 1
+Version.Parent = Header
+
+local CloseButton = Instance.new("TextButton")
+CloseButton.Size = UDim2.new(0, 25, 0, 25)
+CloseButton.Position = UDim2.new(1, -30, 0, 12)
+CloseButton.Text = "✕"
+CloseButton.TextColor3 = Color3.fromRGB(255, 80, 80)
+CloseButton.TextSize = 14
+CloseButton.Font = Enum.Font.GothamBold
+CloseButton.BackgroundTransparency = 1
+CloseButton.Parent = Header
+
+-- ==========================================
+-- 4. ÁREA DE SCROLL (Para caber tudo)
+-- ==========================================
+local ScrollingFrame = Instance.new("ScrollingFrame")
+ScrollingFrame.Size = UDim2.new(1, -10, 1, -55)
+ScrollingFrame.Position = UDim2.new(0, 5, 0, 55)
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 18)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.ScrollBarThickness = 3
+ScrollingFrame.ScrollBarImageColor3 = CorBorda
+ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+ScrollingFrame.Parent = MainFrame
+
+local ScrollCorner = Instance.new("UICorner")
+ScrollCorner.CornerRadius = UDim.new(0, 8)
+ScrollCorner.Parent = ScrollingFrame
+
+-- ==========================================
+-- 5. BOTÕES DE SCRIPTS (Formato Painel)
+-- ==========================================
+local yPos = 10
+
+local function CriarBotao(icon, nome, categoria, url)
+    local Panel = Instance.new("Frame")
+    Panel.Size = UDim2.new(1, -10, 0, 50)
+    Panel.Position = UDim2.new(0, 5, 0, yPos)
+    Panel.BackgroundColor3 = CorPainel
+    Panel.BorderSizePixel = 0
+    Panel.Parent = ScrollingFrame
+    
+    local PanelCorner = Instance.new("UICorner")
+    PanelCorner.CornerRadius = UDim.new(0, 8)
+    PanelCorner.Parent = Panel
+    
+    local PanelStroke = Instance.new("UIStroke")
+    PanelStroke.Thickness = 1
+    PanelStroke.Color = Color3.fromRGB(30, 30, 35)
+    PanelStroke.Parent = Panel
+    
+    local IconFrame = Instance.new("Frame")
+    IconFrame.Size = UDim2.new(0, 32, 0, 32)
+    IconFrame.Position = UDim2.new(0, 5, 0, 9)
+    IconFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 45)
+    IconFrame.BorderSizePixel = 0
+    IconFrame.Parent = Panel
+    
+    local IconCorner = Instance.new("UICorner")
+    IconCorner.CornerRadius = UDim.new(1, 0)
+    IconCorner.Parent = IconFrame
+    
+    local Icon = Instance.new("TextLabel")
+    Icon.Size = UDim2.new(1, 0, 1, 0)
+    Icon.Text = icon
+    Icon.TextSize = 16
+    Icon.BackgroundTransparency = 1
+    Icon.Parent = IconFrame
+    
+    local Nome = Instance.new("TextLabel")
+    Nome.Size = UDim2.new(1, -60, 0, 20)
+    Nome.Position = UDim2.new(0, 45, 0, 5)
+    Nome.Text = nome
+    Nome.TextColor3 = CorTexto
+    Nome.TextSize = 13
+    Nome.Font = Enum.Font.GothamBold
+    Nome.BackgroundTransparency = 1
+    Nome.Parent = Panel
+    
+    local CategoriaText = Instance.new("TextLabel")
+    CategoriaText.Size = UDim2.new(1, -60, 0, 12)
+    CategoriaText.Position = UDim2.new(0, 45, 0, 25)
+    CategoriaText.Text = categoria
+    CategoriaText.TextColor3 = CorCinza
+    CategoriaText.TextSize = 9
+    CategoriaText.Font = Enum.Font.Gotham
+    CategoriaText.BackgroundTransparency = 1
+    CategoriaText.Parent = Panel
+    
+    local ActionBtn = Instance.new("TextButton")
+    ActionBtn.Size = UDim2.new(0, 25, 0, 25)
+    ActionBtn.Position = UDim2.new(1, -32, 0, 12)
+    ActionBtn.Text = "▶"
+    ActionBtn.TextColor3 = CorBorda
+    ActionBtn.TextSize = 12
+    ActionBtn.Font = Enum.Font.GothamBold
+    ActionBtn.BackgroundTransparency = 1
+    ActionBtn.Parent = Panel
+    
+    ActionBtn.MouseButton1Click:Connect(function()
+        ActionBtn.Text = "✔"
+        ActionBtn.TextColor3 = Color3.fromRGB(0, 255, 100)
+        
+        local success, err = pcall(function()
+            loadstring(game:HttpGet(url))()
+        end)
+        
+        if success then
+            print("✅ " .. nome .. " executado!")
+        else
+            print("❌ Erro: " .. tostring(err))
+        end
+        
+        task.wait(1)
+        ActionBtn.Text = "▶"
+    end)
+    
+    yPos = yPos + 58
+end
+
+-- Adicionando os scripts
+CriarBotao("🐉", "Ryuun Hub", "Script", "https://raw.githubusercontent.com/Ryuun0x/Clover/main/main.lua")
+CriarBotao("⚡", "Miranda Hub", "Script", "https://raw.githubusercontent.com/miirandahub/loader/refs/heads/main/stealaeggs")
+CriarBotao("☘️", "Clover Hub", "Script", "https://cloverhub.app/clover.lua")
+CriarBotao("🔥", "Lennon v2", "Script", "https://raw.githubusercontent.com/lennonxscripts/lennonhubv2/refs/heads/main/stealaneggv2")
+
+-- ==========================================
+-- 6. FUNCIONAMENTO (Abrir e Fechar)
+-- ==========================================
+MenuButton.MouseButton1Click:Connect(function()
+    MainFrame.Visible = not MainFrame.Visible
+end)
+
+CloseButton.MouseButton1Click:Connect(function()
+    MainFrame.Visible = false
+end)
+
+-- ==========================================
+-- 🌈 EFEITO RAINBOW SUAVE (Título e Bordas)
+-- ==========================================
+local hue = 0
+game:GetService("RunService").RenderStepped:Connect(function()
+    hue = (hue + 0.002) % 1
+    
+    local r, g, b = Color3.fromHSV(hue, 1, 1):ToRGB()
+    
+    UIStroke.Color = Color3.fromRGB(r, g, b)
+    MenuStroke.Color = Color3.fromRGB(r, g, b)
+    Title.TextColor3 = Color3.fromRGB(r, g, b)
+end)
+
+print("✅ Croks Hub Clean Edition (Bola Redonda) carregado!")_0xDEF6.Position = UDim2.new(0, 5, 0, _0xD55C)
 _0xDEF6.BackgroundColor3 = _0xC006
 _0xDEF6.BorderSizePixel = 0
 _0xDEF6.Parent = _0xB564
