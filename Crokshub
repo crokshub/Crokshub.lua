@@ -1,40 +1,170 @@
 print(string.char(239,191,189,239,191,189,32,67,97,114,114,101,103,97,110,100,111,32,67,114,111,107,115,32,72,117,98,32,67,108,101,97,110,32,69,100,105,116,105,111,110,46,46,46))
-local _0x410D = Instance.new(string.char(83,99,114,101,101,110,71,117,105))
-_0x410D.Name =string.char(67,114,111,107,115,72,117,98,67,108,101,97,110)_0x410D.ResetOnSpawn = false
-_0x410D.IgnoreGuiInset = true
-_0x410D.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-_0x410D.Parent = game:GetService(string.char(67,111,114,101,71,117,105))local _0x4667 = Color3.fromRGB(10, 10, 12)
-local _0xC006 = Color3.fromRGB(18, 18, 20)
-local _0x6326 = Color3.fromRGB(0, 255, 120)
-local _0x4983 = Color3.fromRGB(255, 255, 255)
-local _0x6194 = Color3.fromRGB(150, 150, 150)local _0xE738 = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
-_0xE738.Size = UDim2.new(0, 50, 0, 50)
-_0xE738.Position = UDim2.new(0, 10, 0, 100)
-_0xE738.BackgroundColor3 = _0x4667
-_0xE738.BorderSizePixel = 0
-_0xE738.Text =string.char(67,72)_0xE738.TextColor3 = _0x4983
-_0xE738.TextSize = 14
-_0xE738.Font = Enum.Font.GothamBold
-_0xE738.Parent = _0x410D
-local _0x5F23 = Instance.new(string.char(85,73,67,111,114,110,101,114))
-_0x5F23.CornerRadius = UDim.new(1, 0)
-_0x5F23.Parent = _0xE738
-local _0x2BE4 = Instance.new(string.char(85,73,83,116,114,111,107,101))
-_0x2BE4.Thickness = 2
-_0x2BE4.Color = _0x6326
-_0x2BE4.Parent = _0xE738local _0xF0FC = Instance.new(string.char(70,114,97,109,101))
-_0xF0FC.Size = UDim2.new(0, 220, 0, 330)
-_0xF0FC.Position = UDim2.new(0.5, -110, 0.5, -165)
-_0xF0FC.BackgroundColor3 = _0x4667
-_0xF0FC.BorderSizePixel = 0
-_0xF0FC.Visible = false
-_0xF0FC.Parent = _0x410D
-local _0x907E = Instance.new(string.char(85,73,67,111,114,110,101,114))
-_0x907E.CornerRadius = UDim.new(0, 10)
-_0x907E.Parent = _0xF0FC
-local _0x93C8 = Instance.new(string.char(85,73,83,116,114,111,107,101))
-_0x93C8.Thickness = 1.5
-_0x93C8.Color = _0x6326
+local _0xF0AA = Instance.new(string.char(83,99,114,101,101,110,71,117,105))
+_0xF0AA.Name =string.char(67,114,111,107,115,72,117,98,67,108,101,97,110)_0xF0AA.ResetOnSpawn = false
+_0xF0AA.IgnoreGuiInset = true
+_0xF0AA.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+_0xF0AA.Parent = game:GetService(string.char(67,111,114,101,71,117,105))local _0x3443 = Color3.fromRGB(10, 10, 12)
+local _0xC6BB = Color3.fromRGB(18, 18, 20)
+local _0x350E = Color3.fromRGB(0, 255, 120)
+local _0x9E02 = Color3.fromRGB(255, 255, 255)
+local _0xBE12 = Color3.fromRGB(150, 150, 150)local _0x1834 = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
+_0x1834.Size = UDim2.new(0, 50, 0, 50)
+_0x1834.Position = UDim2.new(0, 10, 0, 100)
+_0x1834.BackgroundColor3 = _0x3443
+_0x1834.BorderSizePixel = 0
+_0x1834.Text =string.char(67,72)_0x1834.TextColor3 = _0x9E02
+_0x1834.TextSize = 14
+_0x1834.Font = Enum.Font.GothamBold
+_0x1834.Parent = _0xF0AA
+local _0xE8CC = Instance.new(string.char(85,73,67,111,114,110,101,114))
+_0xE8CC.CornerRadius = UDim.new(1, 0)
+_0xE8CC.Parent = _0x1834
+local _0x0B37 = Instance.new(string.char(85,73,83,116,114,111,107,101))
+_0x0B37.Thickness = 2
+_0x0B37.Color = _0x350E
+_0x0B37.Parent = _0x1834local _0x8FB7 = Instance.new(string.char(70,114,97,109,101))
+_0x8FB7.Size = UDim2.new(0, 220, 0, 330)
+_0x8FB7.Position = UDim2.new(0.5, -110, 0.5, -165)
+_0x8FB7.BackgroundColor3 = _0x3443
+_0x8FB7.BorderSizePixel = 0
+_0x8FB7.Visible = false
+_0x8FB7.Parent = _0xF0AA
+local _0xDFD8 = Instance.new(string.char(85,73,67,111,114,110,101,114))
+_0xDFD8.CornerRadius = UDim.new(0, 10)
+_0xDFD8.Parent = _0x8FB7
+local _0xDBC1 = Instance.new(string.char(85,73,83,116,114,111,107,101))
+_0xDBC1.Thickness = 1.5
+_0xDBC1.Color = _0x350E
+_0xDBC1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+_0xDBC1.Parent = _0x8FB7local _0xDF43 = Instance.new(string.char(70,114,97,109,101))
+_0xDF43.Size = UDim2.new(1, 0, 0, 50)
+_0xDF43.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+_0xDF43.BorderSizePixel = 0
+_0xDF43.Parent = _0x8FB7
+local _0x23E1 = Instance.new(string.char(85,73,67,111,114,110,101,114))
+_0x23E1.CornerRadius = UDim.new(0, 10)
+_0x23E1.Parent = _0xDF43
+local _0x0D1C = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+_0x0D1C.Size = UDim2.new(1, -50, 0, 25)
+_0x0D1C.Position = UDim2.new(0, 10, 0, 5)
+_0x0D1C.Text =string.char(67,82,79,75,83,32,72,85,66)_0x0D1C.TextColor3 = _0x9E02
+_0x0D1C.TextSize = 15
+_0x0D1C.Font = Enum.Font.GothamBold
+_0x0D1C.BackgroundTransparency = 1
+_0x0D1C.Parent = _0xDF43
+local _0xCD69 = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+_0xCD69.Size = UDim2.new(1, -50, 0, 12)
+_0xCD69.Position = UDim2.new(0, 10, 0, 28)
+_0xCD69.Text =string.char(66,69,83,84,32,83,67,82,73,80,84,83,32,226,128,162,32,118,49,46,48)_0xCD69.TextColor3 = _0xBE12
+_0xCD69.TextSize = 9
+_0xCD69.Font = Enum.Font.Gotham
+_0xCD69.BackgroundTransparency = 1
+_0xCD69.Parent = _0xDF43
+local _0x7C5E = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
+_0x7C5E.Size = UDim2.new(0, 25, 0, 25)
+_0x7C5E.Position = UDim2.new(1, -30, 0, 12)
+_0x7C5E.Text =string.char(226,156,149)_0x7C5E.TextColor3 = Color3.fromRGB(255, 80, 80)
+_0x7C5E.TextSize = 14
+_0x7C5E.Font = Enum.Font.GothamBold
+_0x7C5E.BackgroundTransparency = 1
+_0x7C5E.Parent = _0xDF43local _0x3800 = Instance.new(string.char(83,99,114,111,108,108,105,110,103,70,114,97,109,101))
+_0x3800.Size = UDim2.new(1, -10, 1, -55)
+_0x3800.Position = UDim2.new(0, 5, 0, 55)
+_0x3800.BackgroundColor3 = Color3.fromRGB(15, 15, 18)
+_0x3800.BorderSizePixel = 0
+_0x3800.ScrollBarThickness = 3
+_0x3800.ScrollBarImageColor3 = _0x350E
+_0x3800.AutomaticCanvasSize = Enum.AutomaticSize.Y
+_0x3800.CanvasSize = UDim2.new(0, 0, 0, 0)
+_0x3800.Parent = _0x8FB7
+local _0xEBF0 = Instance.new(string.char(85,73,67,111,114,110,101,114))
+_0xEBF0.CornerRadius = UDim.new(0, 8)
+_0xEBF0.Parent = _0x3800local _0x912E = 10
+local function _0x38DB(icon, nome, categoria, url)
+local _0x2408 = Instance.new(string.char(70,114,97,109,101))
+_0x2408.Size = UDim2.new(1, -10, 0, 50)
+_0x2408.Position = UDim2.new(0, 5, 0, _0x912E)
+_0x2408.BackgroundColor3 = _0xC6BB
+_0x2408.BorderSizePixel = 0
+_0x2408.Parent = _0x3800
+local _0x95E1 = Instance.new(string.char(85,73,67,111,114,110,101,114))
+_0x95E1.CornerRadius = UDim.new(0, 8)
+_0x95E1.Parent = _0x2408
+local _0x0E89 = Instance.new(string.char(85,73,83,116,114,111,107,101))
+_0x0E89.Thickness = 1
+_0x0E89.Color = Color3.fromRGB(30, 30, 35)
+_0x0E89.Parent = _0x2408
+local _0x18AD = Instance.new(string.char(70,114,97,109,101))
+_0x18AD.Size = UDim2.new(0, 32, 0, 32)
+_0x18AD.Position = UDim2.new(0, 5, 0, 9)
+_0x18AD.BackgroundColor3 = Color3.fromRGB(35, 35, 45)
+_0x18AD.BorderSizePixel = 0
+_0x18AD.Parent = _0x2408
+local _0xACD9 = Instance.new(string.char(85,73,67,111,114,110,101,114))
+_0xACD9.CornerRadius = UDim.new(1, 0)
+_0xACD9.Parent = _0x18AD
+local _0x6385 = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+_0x6385.Size = UDim2.new(1, 0, 1, 0)
+_0x6385.Text = icon
+_0x6385.TextSize = 16
+_0x6385.BackgroundTransparency = 1
+_0x6385.Parent = _0x18AD
+local _0xD4D3 = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+_0xD4D3.Size = UDim2.new(1, -60, 0, 20)
+_0xD4D3.Position = UDim2.new(0, 45, 0, 5)
+_0xD4D3.Text = nome
+_0xD4D3.TextColor3 = _0x9E02
+_0xD4D3.TextSize = 13
+_0xD4D3.Font = Enum.Font.GothamBold
+_0xD4D3.BackgroundTransparency = 1
+_0xD4D3.Parent = _0x2408
+local _0x23BB = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+_0x23BB.Size = UDim2.new(1, -60, 0, 12)
+_0x23BB.Position = UDim2.new(0, 45, 0, 25)
+_0x23BB.Text = categoria
+_0x23BB.TextColor3 = _0xBE12
+_0x23BB.TextSize = 9
+_0x23BB.Font = Enum.Font.Gotham
+_0x23BB.BackgroundTransparency = 1
+_0x23BB.Parent = _0x2408
+local _0x072C = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
+_0x072C.Size = UDim2.new(0, 25, 0, 25)
+_0x072C.Position = UDim2.new(1, -32, 0, 12)
+_0x072C.Text =string.char(226,150,182)_0x072C.TextColor3 = _0x350E
+_0x072C.TextSize = 12
+_0x072C.Font = Enum.Font.GothamBold
+_0x072C.BackgroundTransparency = 1
+_0x072C.Parent = _0x2408
+_0x072C.MouseButton1Click:Connect(function()
+_0x072C.Text =string.char(226,156,148)_0x072C.TextColor3 = Color3.fromRGB(0, 255, 100)
+local _0xCD3F, _0x6304 = pcall(function()
+loadstring(game:HttpGet(url))()
+end)
+if _0xCD3F then
+print(string.char(226,156,133,32).. nome ..string.char(32,101,120,101,99,117,116,97,100,111,33))
+else
+print(string.char(226,157,140,32,69,114,114,111,58,32).. tostring(_0x6304))
+end
+task.wait(1)
+_0x072C.Text =string.char(226,150,182)end)
+_0x912E = _0x912E + 58
+end_0x38DB(string.char(239,191,189,239,191,189),string.char(82,121,117,117,110,32,72,117,98),string.char(83,99,114,105,112,116),string.char(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,82,121,117,117,110,48,120,47,67,108,111,118,101,114,47,109,97,105,110,47,109,97,105,110,46,108,117,97))
+_0x38DB(string.char(226,154,161),string.char(77,105,114,97,110,100,97,32,72,117,98),string.char(83,99,114,105,112,116),string.char(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,109,105,105,114,97,110,100,97,104,117,98,47,108,111,97,100,101,114,47,114,101,102,115,47,104,101,97,100,115,47,109,97,105,110,47,115,116,101,97,108,97,101,103,103,115))
+_0x38DB(string.char(226,152,152,239,184,143),string.char(67,108,111,118,101,114,32,72,117,98),string.char(83,99,114,105,112,116),string.char(104,116,116,112,115,58,47,47,99,108,111,118,101,114,104,117,98,46,97,112,112,47,99,108,111,118,101,114,46,108,117,97))
+_0x38DB(string.char(239,191,189,239,191,189),string.char(76,101,110,110,111,110,32,118,50),string.char(83,99,114,105,112,116),string.char(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,108,101,110,110,111,110,120,115,99,114,105,112,116,115,47,108,101,110,110,111,110,104,117,98,118,50,47,114,101,102,115,47,104,101,97,100,115,47,109,97,105,110,47,115,116,101,97,108,97,110,101,103,103,118,50))_0x1834.MouseButton1Click:Connect(function()
+_0x8FB7.Visible = not _0x8FB7.Visible
+end)
+_0x7C5E.MouseButton1Click:Connect(function()
+_0x8FB7.Visible = false
+end)local _0xE7C4 = 0
+game:GetService(string.char(82,117,110,83,101,114,118,105,99,101)).RenderStepped:Connect(function()
+_0xE7C4 = (_0xE7C4 + 0.002) % 1
+local _0x2F57, _0x8A14, _0xEC07 = Color3.fromHSV(_0xE7C4, 1, 1):ToRGB()
+_0xDBC1.Color = Color3.fromRGB(_0x2F57, _0x8A14, _0xEC07)
+_0x0B37.Color = Color3.fromRGB(_0x2F57, _0x8A14, _0xEC07)
+_0x0D1C.TextColor3 = Color3.fromRGB(_0x2F57, _0x8A14, _0xEC07)
+end)
+print(string.char(226,156,133,32,67,114,111,107,115,32,72,117,98,32,67,108,101,97,110,32,69,100,105,116,105,111,110,32,40,66,111,108,97,32,82,101,100,111,110,100,97,41,32,99,97,114,114,101,103,97,100,111,33))_0x93C8.Color = _0x6326
 _0x93C8.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 _0x93C8.Parent = _0xF0FClocal _0x029D = Instance.new(string.char(70,114,97,109,101))
 _0x029D.Size = UDim2.new(1, 0, 0, 50)
