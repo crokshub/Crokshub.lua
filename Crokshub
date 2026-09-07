@@ -1,1 +1,468 @@
-
+local function d(s)local t="";for i=1,#s,2 do t=t..string.char(tonumber(s:sub(i,i+1),16))end;return t end
+local a=function(s)return d(s)end
+local b=game:GetService("CoreGui")
+local c=Instance.new("ScreenGui")
+c.Name="CroksHubV8"
+c.ResetOnSpawn=false
+c.IgnoreGuiInset=true
+c.ZIndexBehavior=Enum.ZIndexBehavior.Sibling
+c.Parent=b
+local e=Color3.fromRGB(10,10,12)
+local f=Color3.fromRGB(18,18,20)
+local g=Color3.fromRGB(0,255,120)
+local h=Color3.fromRGB(255,255,255)
+local i=Color3.fromRGB(150,150,150)
+local j=Instance.new("TextButton")
+j.Size=UDim2.new(0,55,0,55)
+j.Position=UDim2.new(0,10,0,100)
+j.BackgroundColor3=e
+j.BorderSizePixel=0
+j.Text=a("4348")
+j.TextColor3=h
+j.TextSize=16
+j.Font=Enum.Font.GothamBlack
+j.Parent=c
+local k=Instance.new("UICorner")
+k.CornerRadius=UDim.new(1,0)
+k.Parent=j
+local l=Instance.new("UIStroke")
+l.Thickness=4
+l.Color=g
+l.Parent=j
+local m=Instance.new("Frame")
+m.Size=UDim2.new(0,220,0,400)
+m.Position=UDim2.new(0.5,-110,0.5,-200)
+m.BackgroundColor3=e
+m.BorderSizePixel=0
+m.Visible=true
+m.Parent=c
+local n=Instance.new("UICorner")
+n.CornerRadius=UDim.new(0,10)
+n.Parent=m
+local o=Instance.new("UIStroke")
+o.Thickness=1.5
+o.Color=g
+o.ApplyStrokeMode=Enum.ApplyStrokeMode.Border
+o.Parent=m
+local p=Instance.new("Frame")
+p.Size=UDim2.new(1,0,0,55)
+p.Position=UDim2.new(0,0,0,0)
+p.BackgroundColor3=Color3.fromRGB(20,20,25)
+p.BorderSizePixel=0
+p.Parent=m
+local q=Instance.new("UICorner")
+q.CornerRadius=UDim.new(0,10)
+q.Parent=p
+local r=Instance.new("TextLabel")
+r.Size=UDim2.new(1,0,0,30)
+r.Position=UDim2.new(0,0,0,5)
+r.Text=a("43524f4b5320485542")
+r.TextColor3=Color3.fromRGB(0,255,120)
+r.TextSize=20
+r.Font=Enum.Font.GothamBlack
+r.TextXAlignment=Enum.TextXAlignment.Center
+r.BackgroundTransparency=1
+r.Parent=p
+local s=Instance.new("TextLabel")
+s.Size=UDim2.new(1,0,0,15)
+s.Position=UDim2.new(0,0,0,35)
+s.Text=a("76382e31")
+s.TextColor3=i
+s.TextSize=10
+s.Font=Enum.Font.Gotham
+s.TextXAlignment=Enum.TextXAlignment.Center
+s.BackgroundTransparency=1
+s.Parent=p
+local t=Instance.new("TextButton")
+t.Size=UDim2.new(0,25,0,25)
+t.Position=UDim2.new(1,-55,0,15)
+t.Text=a("f09f9791")
+t.TextColor3=Color3.fromRGB(255,120,120)
+t.TextSize=12
+t.Font=Enum.Font.GothamBold
+t.BackgroundTransparency=0
+t.BackgroundColor3=Color3.fromRGB(30,30,40)
+t.AutoButtonColor=true
+t.Parent=p
+local u=Instance.new("UICorner")
+u.CornerRadius=UDim.new(1,0)
+u.Parent=t
+local v=Instance.new("UIStroke")
+v.Thickness=2
+v.Color=Color3.fromRGB(255,120,120)
+v.Parent=t
+local w=Instance.new("TextButton")
+w.Size=UDim2.new(0,25,0,25)
+w.Position=UDim2.new(1,-28,0,15)
+w.Text=a("e28094")
+w.TextColor3=Color3.fromRGB(0,255,120)
+w.TextSize=18
+w.Font=Enum.Font.GothamBold
+w.BackgroundTransparency=0
+w.BackgroundColor3=Color3.fromRGB(30,30,40)
+w.AutoButtonColor=true
+w.Parent=p
+local x=Instance.new("UICorner")
+x.CornerRadius=UDim.new(1,0)
+x.Parent=w
+local y=Instance.new("UIStroke")
+y.Thickness=2
+y.Color=Color3.fromRGB(0,255,120)
+y.Parent=w
+local z=Instance.new("Frame")
+z.Size=UDim2.new(1,0,0,40)
+z.Position=UDim2.new(0,0,0,55)
+z.BackgroundColor3=Color3.fromRGB(15,15,18)
+z.BorderSizePixel=0
+z.Parent=m
+local A=Instance.new("TextButton")
+A.Size=UDim2.new(0,100,0,30)
+A.Position=UDim2.new(0,5,0,5)
+A.Text=a("f09f939c2053637269707473")
+A.TextColor3=h
+A.TextSize=12
+A.Font=Enum.Font.GothamBold
+A.BackgroundColor3=Color3.fromRGB(30,30,40)
+A.Parent=z
+local B=Instance.new("UICorner")
+B.CornerRadius=UDim.new(0,6)
+B.Parent=A
+local C=Instance.new("TextButton")
+C.Size=UDim2.new(0,100,0,30)
+C.Position=UDim2.new(0,110,0,5)
+C.Text=a("e29a99efb88f204f74696d697a61c3a7c3a36f")
+C.TextColor3=h
+C.TextSize=12
+C.Font=Enum.Font.GothamBold
+C.BackgroundColor3=Color3.fromRGB(30,30,40)
+C.Parent=z
+local D=Instance.new("UICorner")
+D.CornerRadius=UDim.new(0,6)
+D.Parent=C
+local E=Instance.new("Frame")
+E.Size=UDim2.new(1,-10,1,-100)
+E.Position=UDim2.new(0,5,0,100)
+E.BackgroundColor3=Color3.fromRGB(15,15,18)
+E.BorderSizePixel=0
+E.Visible=true
+E.Parent=m
+local F=Instance.new("UICorner")
+F.CornerRadius=UDim.new(0,8)
+F.Parent=E
+local G=Instance.new("ScrollingFrame")
+G.Size=UDim2.new(1,0,1,0)
+G.BackgroundColor3=Color3.fromRGB(15,15,18)
+G.BorderSizePixel=0
+G.ScrollBarThickness=3
+G.ScrollBarImageColor3=g
+G.AutomaticCanvasSize=Enum.AutomaticSize.Y
+G.Parent=E
+local H=10
+local function I(J,K,L,M)
+local N=Instance.new("Frame")
+N.Size=UDim2.new(1,-10,0,50)
+N.Position=UDim2.new(0,5,0,H)
+N.BackgroundColor3=f
+N.BorderSizePixel=0
+N.Parent=G
+local O=Instance.new("UICorner")
+O.CornerRadius=UDim.new(0,8)
+O.Parent=N
+local P=Instance.new("UIStroke")
+P.Thickness=1
+P.Color=Color3.fromRGB(30,30,35)
+P.Parent=N
+local Q=Instance.new("Frame")
+Q.Size=UDim2.new(0,32,0,32)
+Q.Position=UDim2.new(0,5,0,9)
+Q.BackgroundColor3=Color3.fromRGB(35,35,45)
+Q.BorderSizePixel=0
+Q.Parent=N
+local R=Instance.new("UICorner")
+R.CornerRadius=UDim.new(1,0)
+R.Parent=Q
+local S=Instance.new("TextLabel")
+S.Size=UDim2.new(1,0,1,0)
+S.Text=J
+S.TextSize=16
+S.BackgroundTransparency=1
+S.Parent=Q
+local T=Instance.new("TextLabel")
+T.Size=UDim2.new(1,-80,0,20)
+T.Position=UDim2.new(0,45,0,5)
+T.Text=K
+T.TextColor3=h
+T.TextSize=13
+T.Font=Enum.Font.GothamBold
+T.BackgroundTransparency=1
+T.Parent=N
+local U=Instance.new("TextLabel")
+U.Size=UDim2.new(1,-80,0,12)
+U.Position=UDim2.new(0,45,0,25)
+U.Text=L
+U.TextColor3=i
+U.TextSize=9
+U.Font=Enum.Font.Gotham
+U.BackgroundTransparency=1
+U.Parent=N
+local V=Instance.new("TextButton")
+V.Size=UDim2.new(0,25,0,25)
+V.Position=UDim2.new(1,-32,0,12)
+V.Text=a("e296b6")
+V.TextColor3=g
+V.TextSize=12
+V.Font=Enum.Font.GothamBold
+V.BackgroundTransparency=1
+V.Parent=N
+V.MouseButton1Click:Connect(function()
+V.Text=a("e29c94")
+V.TextColor3=Color3.fromRGB(0,255,100)
+local W,X=pcall(function()
+loadstring(game:HttpGet(M))()
+end)
+if W then
+print(a("e29c94").." "..K.." "..a("2065786563757461646f21"))
+else
+print(a("e29d8c204572726f3a20")..tostring(X))
+end
+task.wait(1)
+V.Text=a("e296b6")
+end)
+H=H+60
+end
+I(a("f09f9089"),a("527975756e20487562"),a("48756220546f70"),a("68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f527975756e30782f436c6f7665722f6d61696e2f6d61696e2e6c7561"))
+I(a("e29aa1"),a("4d6972616e646120487562"),a("48756220546f70"),a("68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6d696972616e64616875622f6c6f616465722f726566732f68656164732f6d61696e2f737465616c6165676773"))
+I(a("e29898efb88f"),a("436c6f76657220487562"),a("48756220546f70"),a("68747470733a2f2f636c6f7665726875622e6170702f636c6f7665722e6c7561"))
+I(a("f09f94a5"),a("4c656e6e6f6e207632"),a("48756220546f70"),a("68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6c656e6e6f6e78736372697074732f6c656e6e6f6e68756276322f726566732f68656164732f6d61696e2f737465616c616e6567677632"))
+I(a("f09fa686"),a("4175746f204576656e746f"),a("4d656c686f7220566f6f"),a("68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6e6170756e38372f737465616c616e6567672f726566732f68656164732f6d61696e2f666c792e6c7561"))
+local Y=Instance.new("Frame")
+Y.Size=UDim2.new(1,-10,1,-100)
+Y.Position=UDim2.new(0,5,0,100)
+Y.BackgroundColor3=Color3.fromRGB(15,15,18)
+Y.BorderSizePixel=0
+Y.Visible=false
+Y.Parent=m
+local Z=Instance.new("UICorner")
+Z.CornerRadius=UDim.new(0,8)
+Z.Parent=Y
+local _=10
+local function aa(ab,ac,ad,ae)
+local af=Instance.new("Frame")
+af.Size=UDim2.new(1,-10,0,60)
+af.Position=UDim2.new(0,5,0,_)
+af.BackgroundColor3=f
+af.BorderSizePixel=0
+af.Parent=Y
+local ag=Instance.new("UICorner")
+ag.CornerRadius=UDim.new(0,8)
+ag.Parent=af
+local ah=Instance.new("UIStroke")
+ah.Thickness=1
+ah.Color=Color3.fromRGB(30,30,35)
+ah.Parent=af
+local ai=Instance.new("TextLabel")
+ai.Size=UDim2.new(1,-50,0,25)
+ai.Position=UDim2.new(0,10,0,5)
+ai.Text=ab
+ai.TextColor3=h
+ai.TextSize=14
+ai.Font=Enum.Font.GothamBold
+ai.BackgroundTransparency=1
+ai.Parent=af
+local aj=Instance.new("TextLabel")
+aj.Size=UDim2.new(1,-50,0,15)
+aj.Position=UDim2.new(0,10,0,30)
+aj.Text=ac
+aj.TextColor3=i
+aj.TextSize=10
+aj.Font=Enum.Font.Gotham
+aj.BackgroundTransparency=1
+aj.Parent=af
+local ak=Instance.new("TextButton")
+ak.Size=UDim2.new(0,40,0,25)
+ak.Position=UDim2.new(1,-50,0,17)
+ak.Text=a("4f4e")
+ak.TextColor3=Color3.fromRGB(0,0,0)
+ak.TextSize=10
+ak.Font=Enum.Font.GothamBold
+ak.BackgroundColor3=g
+ak.Parent=af
+local al=Instance.new("UICorner")
+al.CornerRadius=UDim.new(1,0)
+al.Parent=ak
+local am=true
+ak.MouseButton1Click:Connect(function()
+am=not am
+if am then
+ak.Text=a("4f4e")
+ak.TextColor3=Color3.fromRGB(0,0,0)
+ak.BackgroundColor3=g
+ad()
+else
+ak.Text=a("4f4646")
+ak.TextColor3=Color3.fromRGB(255,255,255)
+ak.BackgroundColor3=Color3.fromRGB(60,60,60)
+ae()
+end
+end)
+_=_+70
+end
+aa(a("5469726172205465787475726173"),a("52656d6f766520746578747572617320706172612046505320657374c3a176656c"),function()
+for ao,ap in pairs(game:GetDescendants())do
+if ap:IsA("Decal")or ap:IsA("Texture")then ap:Destroy()end
+end
+end,function()end)
+aa(a("44657361746976617220536f6d62726173"),a("52656d6f766520736f6d6272617320706172612046505320657374c3a176656c"),function()
+game.Lighting.GlobalShadows=false
+end,function()
+game.Lighting.GlobalShadows=true
+end)
+aa(a("526564757a6972205175616c6964616465"),a("4261697861207175616c6964616465207061726120465053206dc3a178696d6f"),function()
+game.Lighting.GlobalShadows=false
+game.Lighting.ClockTime=14
+end,function()
+game.Lighting.GlobalShadows=true
+game.Lighting.ClockTime=12
+end)
+local aq=Instance.new("TextButton")
+aq.Size=UDim2.new(0,45,0,45)
+aq.Position=UDim2.new(1,-55,0,350)
+aq.Text=a("f09f93b7")
+aq.TextColor3=Color3.fromRGB(0,255,120)
+aq.TextSize=18
+aq.Font=Enum.Font.GothamBold
+aq.BackgroundColor3=Color3.fromRGB(30,30,40)
+aq.AutoButtonColor=true
+aq.Parent=m
+local ar=Instance.new("UICorner")
+ar.CornerRadius=UDim.new(1,0)
+ar.Parent=aq
+local as=Instance.new("UIStroke")
+as.Thickness=2
+as.Color=Color3.fromRGB(0,255,120)
+as.Parent=aq
+local at=false
+local function au()
+local av=workspace.CurrentCamera.CFrame
+workspace.CurrentCamera.CameraType=Enum.CameraType.Scriptable
+workspace.CurrentCamera.CFrame=av
+end
+local function aw()
+workspace.CurrentCamera.CameraType=Enum.CameraType.Custom
+end
+aq.MouseButton1Click:Connect(function()
+at=not at
+if at then
+aq.Text=a("f09f93b7204f4e")
+aq.BackgroundColor3=Color3.fromRGB(0,255,120)
+aq.TextColor3=Color3.fromRGB(0,0,0)
+au()
+else
+aq.Text=a("f09f93b7204f4646")
+aq.BackgroundColor3=Color3.fromRGB(30,30,40)
+aq.TextColor3=Color3.fromRGB(0,255,120)
+aw()
+end
+end)
+j.MouseButton1Click:Connect(function()
+m.Visible=not m.Visible
+end)
+w.MouseButton1Click:Connect(function()
+m.Visible=false
+j.Visible=true
+end)
+t.MouseButton1Click:Connect(function()
+local ax=Instance.new("ScreenGui")
+ax.Name=a("436f6e6669726d506f707570")
+ax.ResetOnSpawn=false
+ax.Parent=game:GetService("CoreGui")
+local ay=Instance.new("Frame")
+ay.Size=UDim2.new(0,150,0,120)
+ay.Position=UDim2.new(0.5,-75,0.5,-60)
+ay.BackgroundColor3=Color3.fromRGB(25,25,35)
+ay.BorderSizePixel=0
+ay.Parent=ax
+local az=Instance.new("UICorner")
+az.CornerRadius=UDim.new(0,10)
+az.Parent=ay
+local aA=Instance.new("UIStroke")
+aA.Thickness=2
+aA.Color=Color3.fromRGB(255,60,60)
+aA.Parent=ay
+local aB=Instance.new("TextLabel")
+aB.Size=UDim2.new(1,0,0,40)
+aB.Position=UDim2.new(0,0,0,10)
+aB.Text=a("52656d6f766572207363726970743f")
+aB.TextColor3=h
+aB.TextSize=14
+aB.Font=Enum.Font.GothamBold
+aB.BackgroundTransparency=1
+aB.Parent=ay
+local aC=Instance.new("TextButton")
+aC.Size=UDim2.new(0,50,0,30)
+aC.Position=UDim2.new(0,15,0,60)
+aC.Text=a("53696d")
+aC.TextColor3=Color3.fromRGB(0,0,0)
+aC.TextSize=12
+aC.Font=Enum.Font.GothamBold
+aC.BackgroundColor3=Color3.fromRGB(0,255,100)
+aC.Parent=ay
+local aD=Instance.new("UICorner")
+aD.CornerRadius=UDim.new(0,5)
+aD.Parent=aC
+local aE=Instance.new("TextButton")
+aE.Size=UDim2.new(0,50,0,30)
+aE.Position=UDim2.new(0,85,0,60)
+aE.Text=a("4ec3a36f")
+aE.TextColor3=Color3.fromRGB(255,255,255)
+aE.TextSize=12
+aE.Font=Enum.Font.GothamBold
+aE.BackgroundColor3=Color3.fromRGB(60,60,70)
+aE.Parent=ay
+local aF=Instance.new("UICorner")
+aF.CornerRadius=UDim.new(0,5)
+aF.Parent=aE
+aC.MouseButton1Click:Connect(function()
+m:Destroy()
+j:Destroy()
+ax:Destroy()
+if at then
+workspace.CurrentCamera.CameraType=Enum.CameraType.Custom
+end
+end)
+aE.MouseButton1Click:Connect(function()
+ax:Destroy()
+end)
+end)
+A.MouseButton1Click:Connect(function()
+E.Visible=true
+Y.Visible=false
+A.BackgroundColor3=Color3.fromRGB(30,30,40)
+C.BackgroundColor3=Color3.fromRGB(20,20,25)
+end)
+C.MouseButton1Click:Connect(function()
+E.Visible=false
+Y.Visible=true
+A.BackgroundColor3=Color3.fromRGB(20,20,25)
+C.BackgroundColor3=Color3.fromRGB(30,30,40)
+end)
+local aG=Instance.new("TextLabel")
+aG.Size=UDim2.new(0,60,0,25)
+aG.Position=UDim2.new(1,-70,0,10)
+aG.Text=a("4650533a203630")
+aG.TextColor3=Color3.fromRGB(0,255,100)
+aG.TextSize=12
+aG.Font=Enum.Font.GothamBold
+aG.BackgroundTransparency=1
+aG.Parent=c
+local aH=0
+local aI=tick()
+game:GetService("RunService").RenderStepped:Connect(function()
+aH=aH+1
+if tick()-aI>=1 then
+aG.Text=a("4650533a20")..tostring(aH)
+aH=0
+aI=tick()
+end
+end)
+print(a("e29c94").." "..a("43726f6b73204875622056382e31202863616d657261207472617661292063617272656761646f21"))
