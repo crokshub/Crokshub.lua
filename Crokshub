@@ -1,40 +1,551 @@
 -- ==========================================
--- 💎 CROKS HUB - CLEAN EDITION (BOLA REDONDA)
+-- 💎 CROKS HUB V8.1 - CENTRALIZADO E BONITO
 -- ==========================================
-print("💎 Carregando Croks Hub Clean Edition...")
+print("💎 Carregando Croks Hub V8.1...")
 
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "CroksHubClean"
+ScreenGui.Name = "CroksHubV8"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.IgnoreGuiInset = true
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.Parent = game:GetService("CoreGui")
 
--- ==========================================
--- PALETA DE CORES (Dark + Verde Neon)
--- ==========================================
+-- PALETA DE CORES
 local CorFundo = Color3.fromRGB(10, 10, 12)
 local CorPainel = Color3.fromRGB(18, 18, 20)
 local CorBorda = Color3.fromRGB(0, 255, 120)
 local CorTexto = Color3.fromRGB(255, 255, 255)
 local CorCinza = Color3.fromRGB(150, 150, 150)
 
--- ==========================================
--- 1. BOLA FLUTUANTE "CH" (100% Redonda)
--- ==========================================
+-- BOLA "CH"
 local MenuButton = Instance.new("TextButton")
-MenuButton.Size = UDim2.new(0, 50, 0, 50)
+MenuButton.Size = UDim2.new(0, 55, 0, 55)
 MenuButton.Position = UDim2.new(0, 10, 0, 100)
 MenuButton.BackgroundColor3 = CorFundo
 MenuButton.BorderSizePixel = 0
 MenuButton.Text = "CH"
 MenuButton.TextColor3 = CorTexto
-MenuButton.TextSize = 14
-MenuButton.Font = Enum.Font.GothamBold
+MenuButton.TextSize = 16
+MenuButton.Font = Enum.Font.GothamBlack
 MenuButton.Parent = ScreenGui
 
 local MenuCorner = Instance.new("UICorner")
 MenuCorner.CornerRadius = UDim.new(1, 0)
+MenuCorner.Parent = MenuButton
+
+local MenuStroke = Instance.new("UIStroke")
+MenuStroke.Thickness = 4
+MenuStroke.Color = CorBorda
+MenuStroke.Parent = MenuButton
+
+-- MENU PRINCIPAL
+local MainFrame = Instance.new("Frame")
+MainFrame.Size = UDim2.new(0, 220, 0, 400)
+MainFrame.Position = UDim2.new(0.5, -110, 0.5, -200)
+MainFrame.BackgroundColor3 = CorFundo
+MainFrame.BorderSizePixel = 0
+MainFrame.Visible = true
+MainFrame.Parent = ScreenGui
+
+local UICornerMain = Instance.new("UICorner")
+UICornerMain.CornerRadius = UDim.new(0, 10)
+UICornerMain.Parent = MainFrame
+
+local UIStroke = Instance.new("UIStroke")
+UIStroke.Thickness = 1.5
+UIStroke.Color = CorBorda
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke.Parent = MainFrame
+
+-- CABEÇALHO
+local Header = Instance.new("Frame")
+Header.Size = UDim2.new(1, 0, 0, 55)
+Header.Position = UDim2.new(0, 0, 0, 0)
+Header.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+Header.BorderSizePixel = 0
+Header.Parent = MainFrame
+
+local HeaderCorner = Instance.new("UICorner")
+HeaderCorner.CornerRadius = UDim.new(0, 10)
+HeaderCorner.Parent = Header
+
+-- ✅ TÍTULO PERFEITAMENTE CENTRALIZADO (Largura total)
+local Title = Instance.new("TextLabel")
+Title.Size = UDim2.new(1, 0, 0, 30)
+Title.Position = UDim2.new(0, 0, 0, 5)
+Title.Text = "CROKS HUB"
+Title.TextColor3 = Color3.fromRGB(0, 255, 120)
+Title.TextSize = 20
+Title.Font = Enum.Font.GothamBlack
+Title.TextXAlignment = Enum.TextXAlignment.Center -- Força centro
+Title.BackgroundTransparency = 1
+Title.Parent = Header
+
+local Version = Instance.new("TextLabel")
+Version.Size = UDim2.new(1, 0, 0, 15)
+Version.Position = UDim2.new(0, 0, 0, 35)
+Version.Text = "v8.1"
+Version.TextColor3 = CorCinza
+Version.TextSize = 10
+Version.Font = Enum.Font.Gotham
+Version.TextXAlignment = Enum.TextXAlignment.Center
+Version.BackgroundTransparency = 1
+Version.Parent = Header
+
+-- ✅ LIXEIRA (DIREITA, pequena)
+local TrashHeaderBtn = Instance.new("TextButton")
+TrashHeaderBtn.Size = UDim2.new(0, 25, 0, 25)
+TrashHeaderBtn.Position = UDim2.new(1, -55, 0, 15)
+TrashHeaderBtn.Text = "🗑️"
+TrashHeaderBtn.TextColor3 = Color3.fromRGB(255, 120, 120)
+TrashHeaderBtn.TextSize = 12
+TrashHeaderBtn.Font = Enum.Font.GothamBold
+TrashHeaderBtn.BackgroundTransparency = 0
+TrashHeaderBtn.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+TrashHeaderBtn.AutoButtonColor = true
+TrashHeaderBtn.Parent = Header
+
+local TrashHeaderCorner = Instance.new("UICorner")
+TrashHeaderCorner.CornerRadius = UDim.new(1, 0)
+TrashHeaderCorner.Parent = TrashHeaderBtn
+
+local TrashHeaderStroke = Instance.new("UIStroke")
+TrashHeaderStroke.Thickness = 2
+TrashHeaderStroke.Color = Color3.fromRGB(255, 120, 120)
+TrashHeaderStroke.Parent = TrashHeaderBtn
+
+-- ✅ MINIMIZAR (DIREITA, coladinho na lixeira)
+local MinimizeBtn = Instance.new("TextButton")
+MinimizeBtn.Size = UDim2.new(0, 25, 0, 25)
+MinimizeBtn.Position = UDim2.new(1, -28, 0, 15)
+MinimizeBtn.Text = "—"
+MinimizeBtn.TextColor3 = Color3.fromRGB(0, 255, 120)
+MinimizeBtn.TextSize = 18
+MinimizeBtn.Font = Enum.Font.GothamBold
+MinimizeBtn.BackgroundTransparency = 0
+MinimizeBtn.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+MinimizeBtn.AutoButtonColor = true
+MinimizeBtn.Parent = Header
+
+local MinimizeCorner = Instance.new("UICorner")
+MinimizeCorner.CornerRadius = UDim.new(1, 0)
+MinimizeCorner.Parent = MinimizeBtn
+
+local MinimizeStroke = Instance.new("UIStroke")
+MinimizeStroke.Thickness = 2
+MinimizeStroke.Color = Color3.fromRGB(0, 255, 120)
+MinimizeStroke.Parent = MinimizeBtn
+
+-- ABAS
+local TabBar = Instance.new("Frame")
+TabBar.Size = UDim2.new(1, 0, 0, 40)
+TabBar.Position = UDim2.new(0, 0, 0, 55)
+TabBar.BackgroundColor3 = Color3.fromRGB(15, 15, 18)
+TabBar.BorderSizePixel = 0
+TabBar.Parent = MainFrame
+
+local Tab1Btn = Instance.new("TextButton")
+Tab1Btn.Size = UDim2.new(0, 100, 0, 30)
+Tab1Btn.Position = UDim2.new(0, 5, 0, 5)
+Tab1Btn.Text = "📜 Scripts"
+Tab1Btn.TextColor3 = CorTexto
+Tab1Btn.TextSize = 12
+Tab1Btn.Font = Enum.Font.GothamBold
+Tab1Btn.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+Tab1Btn.Parent = TabBar
+
+local Tab1Corner = Instance.new("UICorner")
+Tab1Corner.CornerRadius = UDim.new(0, 6)
+Tab1Corner.Parent = Tab1Btn
+
+local Tab2Btn = Instance.new("TextButton")
+Tab2Btn.Size = UDim2.new(0, 100, 0, 30)
+Tab2Btn.Position = UDim2.new(0, 110, 0, 5)
+Tab2Btn.Text = "⚙️ Otimização"
+Tab2Btn.TextColor3 = CorTexto
+Tab2Btn.TextSize = 12
+Tab2Btn.Font = Enum.Font.GothamBold
+Tab2Btn.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+Tab2Btn.Parent = TabBar
+
+local Tab2Corner = Instance.new("UICorner")
+Tab2Corner.CornerRadius = UDim.new(0, 6)
+Tab2Corner.Parent = Tab2Btn
+
+-- ABA 1: SCRIPTS
+local Tab1Content = Instance.new("Frame")
+Tab1Content.Size = UDim2.new(1, -10, 1, -100)
+Tab1Content.Position = UDim2.new(0, 5, 0, 100)
+Tab1Content.BackgroundColor3 = Color3.fromRGB(15, 15, 18)
+Tab1Content.BorderSizePixel = 0
+Tab1Content.Visible = true
+Tab1Content.Parent = MainFrame
+
+local Tab1Corner = Instance.new("UICorner")
+Tab1Corner.CornerRadius = UDim.new(0, 8)
+Tab1Corner.Parent = Tab1Content
+
+local Scroll1 = Instance.new("ScrollingFrame")
+Scroll1.Size = UDim2.new(1, 0, 1, 0)
+Scroll1.BackgroundColor3 = Color3.fromRGB(15, 15, 18)
+Scroll1.BorderSizePixel = 0
+Scroll1.ScrollBarThickness = 3
+Scroll1.ScrollBarImageColor3 = CorBorda
+Scroll1.AutomaticCanvasSize = Enum.AutomaticSize.Y
+Scroll1.Parent = Tab1Content
+
+local yPos = 10
+local function CriarBotao(icon, nome, categoria, url)
+    local Panel = Instance.new("Frame")
+    Panel.Size = UDim2.new(1, -10, 0, 50)
+    Panel.Position = UDim2.new(0, 5, 0, yPos)
+    Panel.BackgroundColor3 = CorPainel
+    Panel.BorderSizePixel = 0
+    Panel.Parent = Scroll1
+    
+    local PanelCorner = Instance.new("UICorner")
+    PanelCorner.CornerRadius = UDim.new(0, 8)
+    PanelCorner.Parent = Panel
+    
+    local PanelStroke = Instance.new("UIStroke")
+    PanelStroke.Thickness = 1
+    PanelStroke.Color = Color3.fromRGB(30, 30, 35)
+    PanelStroke.Parent = Panel
+    
+    local IconFrame = Instance.new("Frame")
+    IconFrame.Size = UDim2.new(0, 32, 0, 32)
+    IconFrame.Position = UDim2.new(0, 5, 0, 9)
+    IconFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 45)
+    IconFrame.BorderSizePixel = 0
+    IconFrame.Parent = Panel
+    
+    local IconCorner = Instance.new("UICorner")
+    IconCorner.CornerRadius = UDim.new(1, 0)
+    IconCorner.Parent = IconFrame
+    
+    local Icon = Instance.new("TextLabel")
+    Icon.Size = UDim2.new(1, 0, 1, 0)
+    Icon.Text = icon
+    Icon.TextSize = 16
+    Icon.BackgroundTransparency = 1
+    Icon.Parent = IconFrame
+    
+    local Nome = Instance.new("TextLabel")
+    Nome.Size = UDim2.new(1, -80, 0, 20)
+    Nome.Position = UDim2.new(0, 45, 0, 5)
+    Nome.Text = nome
+    Nome.TextColor3 = CorTexto
+    Nome.TextSize = 13
+    Nome.Font = Enum.Font.GothamBold
+    Nome.BackgroundTransparency = 1
+    Nome.Parent = Panel
+    
+    local CategoriaText = Instance.new("TextLabel")
+    CategoriaText.Size = UDim2.new(1, -80, 0, 12)
+    CategoriaText.Position = UDim2.new(0, 45, 0, 25)
+    CategoriaText.Text = categoria
+    CategoriaText.TextColor3 = CorCinza
+    CategoriaText.TextSize = 9
+    CategoriaText.Font = Enum.Font.Gotham
+    CategoriaText.BackgroundTransparency = 1
+    CategoriaText.Parent = Panel
+    
+    local ActionBtn = Instance.new("TextButton")
+    ActionBtn.Size = UDim2.new(0, 25, 0, 25)
+    ActionBtn.Position = UDim2.new(1, -32, 0, 12)
+    ActionBtn.Text = "▶"
+    ActionBtn.TextColor3 = CorBorda
+    ActionBtn.TextSize = 12
+    ActionBtn.Font = Enum.Font.GothamBold
+    ActionBtn.BackgroundTransparency = 1
+    ActionBtn.Parent = Panel
+    
+    ActionBtn.MouseButton1Click:Connect(function()
+        ActionBtn.Text = "✔"
+        ActionBtn.TextColor3 = Color3.fromRGB(0, 255, 100)
+        local success, err = pcall(function()
+            loadstring(game:HttpGet(url))()
+        end)
+        if success then
+            print("✅ " .. nome .. " executado!")
+        else
+            print("❌ Erro: " .. tostring(err))
+        end
+        task.wait(1)
+        ActionBtn.Text = "▶"
+    end)
+    
+    yPos = yPos + 60
+end
+
+CriarBotao("🐉", "Ryuun Hub", "Hub Top", "https://raw.githubusercontent.com/Ryuun0x/Clover/main/main.lua")
+CriarBotao("⚡", "Miranda Hub", "Hub Top", "https://raw.githubusercontent.com/miirandahub/loader/refs/heads/main/stealaeggs")
+CriarBotao("☘️", "Clover Hub", "Hub Top", "https://cloverhub.app/clover.lua")
+CriarBotao("🔥", "Lennon v2", "Hub Top", "https://raw.githubusercontent.com/lennonxscripts/lennonhubv2/refs/heads/main/stealaneggv2")
+CriarBotao("🦅", "Auto Evento", "Melhor Voo", "https://raw.githubusercontent.com/napun87/stealanegg/refs/heads/main/fly.lua")
+
+-- ABA 2: OTIMIZAÇÃO
+local Tab2Content = Instance.new("Frame")
+Tab2Content.Size = UDim2.new(1, -10, 1, -100)
+Tab2Content.Position = UDim2.new(0, 5, 0, 100)
+Tab2Content.BackgroundColor3 = Color3.fromRGB(15, 15, 18)
+Tab2Content.BorderSizePixel = 0
+Tab2Content.Visible = false
+Tab2Content.Parent = MainFrame
+
+local Tab2Corner = Instance.new("UICorner")
+Tab2Corner.CornerRadius = UDim.new(0, 8)
+Tab2Corner.Parent = Tab2Content
+
+local yPos2 = 10
+local function CriarOtimizacao(nome, desc, onFunction, offFunction)
+    local Panel = Instance.new("Frame")
+    Panel.Size = UDim2.new(1, -10, 0, 60)
+    Panel.Position = UDim2.new(0, 5, 0, yPos2)
+    Panel.BackgroundColor3 = CorPainel
+    Panel.BorderSizePixel = 0
+    Panel.Parent = Tab2Content
+    
+    local PanelCorner = Instance.new("UICorner")
+    PanelCorner.CornerRadius = UDim.new(0, 8)
+    PanelCorner.Parent = Panel
+    
+    local PanelStroke = Instance.new("UIStroke")
+    PanelStroke.Thickness = 1
+    PanelStroke.Color = Color3.fromRGB(30, 30, 35)
+    PanelStroke.Parent = Panel
+    
+    local Title = Instance.new("TextLabel")
+    Title.Size = UDim2.new(1, -50, 0, 25)
+    Title.Position = UDim2.new(0, 10, 0, 5)
+    Title.Text = nome
+    Title.TextColor3 = CorTexto
+    Title.TextSize = 14
+    Title.Font = Enum.Font.GothamBold
+    Title.BackgroundTransparency = 1
+    Title.Parent = Panel
+    
+    local Desc = Instance.new("TextLabel")
+    Desc.Size = UDim2.new(1, -50, 0, 15)
+    Desc.Position = UDim2.new(0, 10, 0, 30)
+    Desc.Text = desc
+    Desc.TextColor3 = CorCinza
+    Desc.TextSize = 10
+    Desc.Font = Enum.Font.Gotham
+    Desc.BackgroundTransparency = 1
+    Desc.Parent = Panel
+    
+    local ToggleBtn = Instance.new("TextButton")
+    ToggleBtn.Size = UDim2.new(0, 40, 0, 25)
+    ToggleBtn.Position = UDim2.new(1, -50, 0, 17)
+    ToggleBtn.Text = "ON"
+    ToggleBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+    ToggleBtn.TextSize = 10
+    ToggleBtn.Font = Enum.Font.GothamBold
+    ToggleBtn.BackgroundColor3 = CorBorda
+    ToggleBtn.Parent = Panel
+    
+    local ToggleCorner = Instance.new("UICorner")
+    ToggleCorner.CornerRadius = UDim.new(1, 0)
+    ToggleCorner.Parent = ToggleBtn
+    
+    local isOn = true
+    ToggleBtn.MouseButton1Click:Connect(function()
+        isOn = not isOn
+        if isOn then
+            ToggleBtn.Text = "ON"
+            ToggleBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+            ToggleBtn.BackgroundColor3 = CorBorda
+            onFunction()
+        else
+            ToggleBtn.Text = "OFF"
+            ToggleBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+            ToggleBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+            offFunction()
+        end
+    end)
+    
+    yPos2 = yPos2 + 70
+end
+
+CriarOtimizacao("Tirar Texturas", "Remove texturas para FPS estável", function()
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("Decal") or v:IsA("Texture") then
+            v:Destroy()
+        end
+    end
+end, function() end)
+
+CriarOtimizacao("Desativar Sombras", "Remove sombras para FPS estável", function()
+    game.Lighting.GlobalShadows = false
+end, function()
+    game.Lighting.GlobalShadows = true
+end)
+
+CriarOtimizacao("Reduzir Qualidade", "Baixa qualidade para FPS máximo", function()
+    game.Lighting.GlobalShadows = false
+    game.Lighting.ClockTime = 14
+end, function()
+    game.Lighting.GlobalShadows = true
+    game.Lighting.ClockTime = 12
+end)
+
+-- 🎥 CÂMERA (MELHORADA - Canto inferior direito)
+local CameraAtivo = false
+local CameraBtn = Instance.new("TextButton")
+CameraBtn.Size = UDim2.new(0, 45, 0, 45)
+CameraBtn.Position = UDim2.new(1, -55, 0, 350)
+CameraBtn.Text = "📷"
+CameraBtn.TextColor3 = Color3.fromRGB(0, 255, 120)
+CameraBtn.TextSize = 18
+CameraBtn.Font = Enum.Font.GothamBold
+CameraBtn.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+CameraBtn.AutoButtonColor = true
+CameraBtn.Parent = MainFrame
+
+local CameraCorner = Instance.new("UICorner")
+CameraCorner.CornerRadius = UDim.new(1, 0)
+CameraCorner.Parent = CameraBtn
+
+local CameraStroke = Instance.new("UIStroke")
+CameraStroke.Thickness = 2
+CameraStroke.Color = Color3.fromRGB(0, 255, 120)
+CameraStroke.Parent = CameraBtn
+
+CameraBtn.MouseButton1Click:Connect(function()
+    CameraAtivo = not CameraAtivo
+    if CameraAtivo then
+        CameraBtn.Text = "📷 ON"
+        CameraBtn.BackgroundColor3 = Color3.fromRGB(0, 255, 120)
+        CameraBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+        workspace.CurrentCamera.CameraType = Enum.CameraType.Scriptable
+        workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position + Vector3.new(0, 3, 0))
+    else
+        CameraBtn.Text = "📷 OFF"
+        CameraBtn.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+        CameraBtn.TextColor3 = Color3.fromRGB(0, 255, 120)
+        workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
+    end
+end)
+
+-- FUNCIONAMENTO
+MenuButton.MouseButton1Click:Connect(function()
+    MainFrame.Visible = not MainFrame.Visible
+end)
+
+MinimizeBtn.MouseButton1Click:Connect(function()
+    MainFrame.Visible = false
+    MenuButton.Visible = true
+end)
+
+TrashHeaderBtn.MouseButton1Click:Connect(function()
+    local ConfirmGui = Instance.new("ScreenGui")
+    ConfirmGui.Name = "ConfirmPopup"
+    ConfirmGui.ResetOnSpawn = false
+    ConfirmGui.Parent = game:GetService("CoreGui")
+    
+    local ConfirmFrame = Instance.new("Frame")
+    ConfirmFrame.Size = UDim2.new(0, 150, 0, 120)
+    ConfirmFrame.Position = UDim2.new(0.5, -75, 0.5, -60)
+    ConfirmFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+    ConfirmFrame.BorderSizePixel = 0
+    ConfirmFrame.Parent = ConfirmGui
+    
+    local ConfirmCorner = Instance.new("UICorner")
+    ConfirmCorner.CornerRadius = UDim.new(0, 10)
+    ConfirmCorner.Parent = ConfirmFrame
+    
+    local ConfirmStroke = Instance.new("UIStroke")
+    ConfirmStroke.Thickness = 2
+    ConfirmStroke.Color = Color3.fromRGB(255, 60, 60)
+    ConfirmStroke.Parent = ConfirmFrame
+    
+    local ConfirmText = Instance.new("TextLabel")
+    ConfirmText.Size = UDim2.new(1, 0, 0, 40)
+    ConfirmText.Position = UDim2.new(0, 0, 0, 10)
+    ConfirmText.Text = "Remover script?"
+    ConfirmText.TextColor3 = CorTexto
+    ConfirmText.TextSize = 14
+    ConfirmText.Font = Enum.Font.GothamBold
+    ConfirmText.BackgroundTransparency = 1
+    ConfirmText.Parent = ConfirmFrame
+    
+    local YesBtn = Instance.new("TextButton")
+    YesBtn.Size = UDim2.new(0, 50, 0, 30)
+    YesBtn.Position = UDim2.new(0, 15, 0, 60)
+    YesBtn.Text = "Sim"
+    YesBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+    YesBtn.TextSize = 12
+    YesBtn.Font = Enum.Font.GothamBold
+    YesBtn.BackgroundColor3 = Color3.fromRGB(0, 255, 100)
+    YesBtn.Parent = ConfirmFrame
+    
+    local YesCorner = Instance.new("UICorner")
+    YesCorner.CornerRadius = UDim.new(0, 5)
+    YesCorner.Parent = YesBtn
+    
+    local NoBtn = Instance.new("TextButton")
+    NoBtn.Size = UDim2.new(0, 50, 0, 30)
+    NoBtn.Position = UDim2.new(0, 85, 0, 60)
+    NoBtn.Text = "Não"
+    NoBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+    NoBtn.TextSize = 12
+    NoBtn.Font = Enum.Font.GothamBold
+    NoBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 70)
+    NoBtn.Parent = ConfirmFrame
+    
+    local NoCorner = Instance.new("UICorner")
+    NoCorner.CornerRadius = UDim.new(0, 5)
+    NoCorner.Parent = NoBtn
+    
+    YesBtn.MouseButton1Click:Connect(function()
+        MainFrame:Destroy()
+        MenuButton:Destroy()
+        ConfirmGui:Destroy()
+    end)
+    
+    NoBtn.MouseButton1Click:Connect(function()
+        ConfirmGui:Destroy()
+    end)
+end)
+
+Tab1Btn.MouseButton1Click:Connect(function()
+    Tab1Content.Visible = true
+    Tab2Content.Visible = false
+    Tab1Btn.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+    Tab2Btn.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+end)
+
+Tab2Btn.MouseButton1Click:Connect(function()
+    Tab1Content.Visible = false
+    Tab2Content.Visible = true
+    Tab1Btn.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+    Tab2Btn.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+end)
+
+-- FPS COUNTER
+local FpsLabel = Instance.new("TextLabel")
+FpsLabel.Size = UDim2.new(0, 60, 0, 25)
+FpsLabel.Position = UDim2.new(1, -70, 0, 10)
+FpsLabel.Text = "FPS: 60"
+FpsLabel.TextColor3 = Color3.fromRGB(0, 255, 100)
+FpsLabel.TextSize = 12
+FpsLabel.Font = Enum.Font.GothamBold
+FpsLabel.BackgroundTransparency = 1
+FpsLabel.Parent = ScreenGui
+
+local frameCount = 0
+local lastTime = tick()
+game:GetService("RunService").RenderStepped:Connect(function()
+    frameCount = frameCount + 1
+    if tick() - lastTime >= 1 then
+        FpsLabel.Text = "FPS: " .. tostring(frameCount)
+        frameCount = 0
+        lastTime = tick()
+    end
+end)
+
+print("✅ Croks Hub V8.1 carregado!")MenuCorner.CornerRadius = UDim.new(1, 0)
 MenuCorner.Parent = MenuButton
 
 local MenuStroke = Instance.new("UIStroke")
